@@ -3,8 +3,13 @@
  * Copyright 2013-2016 Bhaumik Panchal
  * Licensed under  ()
  */
+/* CUSTOM */
+#carousal {
+  margin: 0px;
+  padding-top: 100px;
+}
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
@@ -18,7 +23,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #E8E8E8;
+  color: #FFFFFF;
   outline: none;
 }
 h1,
@@ -40,23 +45,25 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
+/*
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-}
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
+}*/
 hr.star-light {
   border-color: white;
 }
+/*
 hr.star-light:after {
-  background-color: #E8E8E8;
-  color: white;
-}
+    background-color: @theme-success;
+    color: white;
+}*/
 hr.star-primary {
   border-color: #000000;
 }
@@ -69,7 +76,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #E8E8E8;
+  background: #FFFFFF;
   color: white;
 }
 header .container {
@@ -129,7 +136,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #E8E8E8;
+  color: #FFFFFF;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +145,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #E8E8E8;
+  background: #FFFFFF;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #E8E8E8;
+  background: #FFFFFF;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +161,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #E8E8E8;
+  background-color: #FFFFFF;
   color: white;
-  border-color: #E8E8E8;
+  border-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -186,8 +193,8 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #E8E8E8;
-  color: white;
+  background: black;
+  color: #FFFFFF;
 }
 @media (max-width: 767px) {
   section {
@@ -208,7 +215,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(232, 232, 232, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -289,7 +296,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #E8E8E8;
+  color: #FFFFFF;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -323,7 +330,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #E8E8E8;
+  color: #FFFFFF;
   background: white;
   border: solid 2px white;
 }
@@ -371,8 +378,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #E8E8E8;
-  border-color: #E8E8E8;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -381,8 +388,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #cfcfcf;
-  border-color: #c9c9c9;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
 }
 .btn-success:active,
 .btn-success.active,
@@ -404,11 +411,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #E8E8E8;
-  border-color: #E8E8E8;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 .btn-success .badge {
-  color: #E8E8E8;
+  color: #FFFFFF;
   background-color: white;
 }
 .btn-social {

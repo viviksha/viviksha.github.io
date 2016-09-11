@@ -1,8 +1,15 @@
 @import "variables.less";
 @import "mixins.less";
 
+
+/* CUSTOM */
+#carousal {
+	margin: 0px;
+	padding-top: 100px;
+}
+
 body {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
@@ -38,7 +45,7 @@ hr.star-primary {
     max-width: 250px;
     margin: 25px auto 30px;
 }
-
+/*
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -48,16 +55,16 @@ hr.star-primary:after {
     top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
-}
+}*/
 
 hr.star-light {
     border-color: white;
 }
-
+/*
 hr.star-light:after {
     background-color: @theme-success;
     color: white;
-}
+}*/
 
 hr.star-primary {
     border-color: @theme-primary;
@@ -207,7 +214,7 @@ section {
 
 section.success {
 	background: black;
-	color: @gray-base;
+	color: @theme-success;
 }
 
 @media(max-width:767px) {
