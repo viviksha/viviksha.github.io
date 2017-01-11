@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap -  v1.0.0 (https://github.com/viviksha/viviksha.github.io)
- * Copyright 2013-2016 Bhaumik Panchal
+ * Copyright 2013-2017 Bhaumik Panchal
  * Licensed under  ()
  */
 /* CUSTOM */
@@ -42,7 +42,7 @@ hr.star-primary {
   border: none;
   border-top: solid 5px;
   text-align: center;
-  max-width: 250px;
+  max-width: 400px;
   margin: 25px auto 30px;
 }
 /*
@@ -127,7 +127,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: white;
+  color: #222222;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -144,13 +144,12 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
-  /*color: white;*/
+  color: white;
   background: #FFFFFF;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color: white;
   background: #FFFFFF;
 }
 .navbar-custom .navbar-toggle {
@@ -203,6 +202,9 @@ section.success {
   section.first {
     padding-top: 75px;
   }
+}
+.sub-category {
+  padding: 15px;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
