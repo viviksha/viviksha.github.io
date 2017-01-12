@@ -209,6 +209,9 @@ section.success {
 .project-desc {
   text-algin: left;
 }
+.spacer {
+  padding-top: 30px;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
