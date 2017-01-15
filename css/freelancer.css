@@ -205,17 +205,27 @@ section.success {
 .sub-category {
   padding: 15px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 1.5px;
 }
 .project-desc {
   text-algin: left;
 }
+.project-desc h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+.project-desc .lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 200;
+}
 .project-desc-credits {
+  font-family: 'Lato', sans-serif;
   text-align: left;
   font-weight: 200;
-  font-style: italic;
 }
 .spacer {
   padding-top: 60px;
@@ -484,6 +494,11 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
+}
+.portfolio-modal .modal-content h3,
+.portfolio-modal .modal-content h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
