@@ -498,6 +498,10 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+#portfolioModal1 .modal-content img.img-responsive.img-centered {
+  padding-left: 150px;
+  padding-right: 150px;
+}
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
