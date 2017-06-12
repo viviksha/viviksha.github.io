@@ -1,5 +1,3 @@
-// Freelancer Theme JavaScript
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -28,7 +26,7 @@
         offset: {
             top: 100
         }
-    })
+    });
 
     // Floating label headings for the contact form
     $(function() {

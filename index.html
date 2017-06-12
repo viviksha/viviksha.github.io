@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="vivikshaApp">
 
 <head>
 
@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" ng-controller="mainController">
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -42,21 +42,24 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand main-name" href="#page-top">Viviksha Panchal</a>
+                <a class="navbar-brand main-name" href="#">Viviksha Panchal</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Art Direction</a>
+                        <a href="#artdirection">Advertising</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#GraphicDesign">Graphic Design</a>
-                    </li>                    
+                        <a href="#design">Design</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#diaries">Diaries</a>
+                    </li>                  
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
@@ -69,231 +72,20 @@
 
     <!-- Header -->
     <header>
-        <div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/homepage.jpg" alt="" style="margin-bottom: 0px; padding-top: 100px;">
-                    <!-- <div class="intro-text">
-                        <span class="name">Viviksha Panchal</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
-                    </div> -->
-                </div>
-            </div>
-        </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row" id="ArtDirection">
-                <div class="col-lg-12 text-center">
-                    <h2>Art Direction</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="sub-category">
-                    ADVERTISING
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Baja Fresh</b>
-                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
-                            </div>
-                        </div>
-                        <img src="img/art_dir/project_1/cover.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Maxwell House</b>
-                            </div>
-                        </div>
-                        <img src="img/art_dir/project_2/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Mirror Fair</b>
-                            </div>
-                        </div>
-                        <img src="img/art_dir/project_3/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main" class="container-fluid">
+      <div>
 
-                <div class="sub-category">
-                    PHOTOGRAPHY
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Persona</b>
-                            </div>
-                        </div>
-                        <img src="img/photo/project_1/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Original Design Studios</b>
-                            </div>
-                        </div>
-                        <img src="img/photo/project_2/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Lucid Dream</b>
-                            </div>
-                        </div>
-                        <img src="img/photo/project_3/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            <div class="row" id="GraphicDesign">
-                <div class="col-lg-12 text-center spacer">
-                    <h2>Graphic Design</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Off Road</b>
-                            </div>
-                        </div>
-                        <img src="img/gd/project_1/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Jackie's Boutique</b>
-                            </div>
-                        </div>
-                        <img src="img/gd/project_2/jackie_2.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Gujarat Gin</b>
-                            </div>
-                        </div>
-                        <img src="img/gd/project_3/gin_1.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>The Night Before</b>
-                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
-                            </div>
-                        </div>
-                        <img src="img/gd/project_4/champagne1.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Fashion Meets Pulses</b>
-                            </div>
-                        </div>
-                        <img src="img/gd/project_5/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <b>Resume</b>
-                            </div>
-                        </div>
-                        <img src="img/gd/project_6/cover.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+      </div>
+    </div>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <img src="img/photo.png" class="img-responsive img-centered" alt=""><br/>
-                    <p id="about-me">Viviksha is an undergraduate senior at Pratt Institute, Brooklyn, NY pursuing a BFA in Communication Design with a concentration in Advertising Art Direction.
-                    Born in India, raised in New Jersey, grew up in New York, she is an insightful designer constantly seeking for new ideologies to inspire her work. With an elevated interest in advertising, graphic design and photography, she aims to design her clients’ vision by finding a distinct visual language in their needs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4 col-lg-offset-2">
-                        <h3>Contact</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="mailto:vivikshap@gmail.com?Subject=Hello%20again" target="_top" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope "></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/viviksha-panchal-872331100" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.instagram.com/viviksha_p/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.behance.net/vivikshap892a" class="btn-social btn-outline"><i class="fa fa-fw fa-behance"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/viviksha.panchal" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Viviksha Panchal 2016
-                    </div>
-                </div>
-            </div>
-        </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -301,436 +93,6 @@
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Baja Fresh</h2>
-                            <hr>
-                            <div class="project-desc">
-                                <h4>CLIENT:</h4> Baja Fresh (Mexican Fast Food Restaurant) <br/>
-                                <h4>CONCEPT:</h4>
-                                The average mealtime is approximately 20 minutes. Most of us spend large amount of those minutes on phones and social media. With this bag, we provide an all around quality mealtime with your friends out of the screens by unplugging and reconnecting.
-                            </div>
-                            <img src="img/art_dir/project_1/baja1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_1/baja2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_1/baja3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_1/baja4.gif" class="img-responsive img-centered" alt=""><p>
-                            <hr>
-                            <div class="project-desc-credits">Campaign with Stacey Kim</div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Maxwell House</h2>
-                            <hr>
-                            <div class="project-desc">
-                                <h4>CLIENT:</h4> Maxwell House (American coffee brand) <br/>
-                                <h4>CONCEPT:</h4>
-                                Maxwell House coffee has been one of the few constants in American coffee for 125 years. By default, most of the people buy coffee from coffee shops everyday instead of brewing at home. We created this campaign to remind people that coffee belongs in the home.
-                            </div>
-                            <img src="img/art_dir/project_2/maxwell1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_2/maxwell2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_2/maxwell3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_2/maxwell5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_2/maxwell6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <hr>
-                            <div class="project-desc-credits">
-                                Art Direction: Viviksha Panchal <br/>
-                                Copy: David Cutler
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Mirror Fair</h2>
-                            <hr>
-                            <div class="project-desc">
-                                <h4>CLIENT:</h4> Mirror Fair (Antique glass and mirror shop) <br/>
-                                <h4>CONCEPT:</h4>
-                                Mirrors have evolved into many artistic forms since its creation. Unlike any other medium, they have helped artists and artisans vision the reality of the world into the most ambiguous yet intriguing forms. Mirror Fair brings this ambiguous vision to life with custom handmade mirror designs. 
-                                *silvered: coat or plate with silver.
-                            </div>
-                            <img src="img/art_dir/project_3/mirror2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_3/mirror3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_3/mirror4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_3/mirror5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_3/mirror6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/art_dir/project_3/mirror7.gif" class="img-responsive img-centered" alt=""><p>
-                            <hr>
-                            <div class="project-desc-credits">
-                                Art Direction and Copy: Viviksha Panchal
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Persona</h2>
-                            <h4>Study of Human Personality | Photo Series</h4>
-                            <hr>
-                            <div class="project-desc">
-                                What makes us unique? Conducting a survey, the immediate response I received was personality. Personality in definition is a combination of characteristics and qualities that form an individual's character. But what makes our personality? What makes who we are? Looking for these answers I explored a photo series of human persona; using one person and presenting them with a distinct personality trait. The fruits and vegetables communicate each personality type through their distinct flavor, color and texture.<br/>
-                            </div><br/>
-                            <img src="img/photo/project_1/girl1.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl2.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl3.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl4.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl5.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl6.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl7.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl8.jpeg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_1/girl9.jpeg" class="img-responsive img-centered" alt=""><p> 
-                            <div class="project-desc">
-                                In this fascinating adventure, I discovered how a human’s face is a lexicon of emotions that instantly conveys innate thoughts and feelings. One person can look and be perceived so differently when presented in diverse avatars. Identically, the way we move, the way we dress, the way we feel and the way we express reflect our persona making us each unique and singular.<br/>
-                            </div><hr>
-                            <div class="project-desc-credits">
-                                Photography and Model: Viviksha Panchal
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Original Design Studios</h2>
-                            <h3>Editorial Photoshoot</h3>
-                            <hr>
-                            <div class="project-desc">
-                                <div class="lato">
-                                Original Design Studio is a digital fashion-branding agency specializing in graphic design, photography and social media.</div><br/>
-
-                                In redesigning the website, we maintained the main aesthetic of the studio: All forms of design – fine art, graphic design and photography intersect with one another and can be combined to achieve original concepts and unique design executions. <br/><br/>
-
-                                Each design platform is presented with particular poses, garments, hair and makeup. The white attire for the model in the white background defines purity of each platform. Her geometric dress, sturdy body language and sharp makeup lines characterize graphic design whereas long sleek dress with soft gestures and organic hair and makeup personify photography. The orange smoke signifying fine art translate the mixture of each platform as it moves in the space combining foreground and background.
-                            </div>
-                            <img src="img/photo/project_2/image1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_2/image2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_2/image3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_2/image4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_2/image5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_2/image6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <hr>
-                            <div class="project-desc-credits">
-                                Art Direction: Viviksha Panchal and Gina Capozza<br/>
-                                Photography: Robert Scheuerman<br/>
-                                Model: Anna Illina<br/>
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Lucid Dream</h2>
-                            <h3>Photo Collage</h3>
-                            <hr>
-                            <div class="project-desc">
-                                What is it like to be in a lucid dream?
-                            </div>
-                            <img src="img/photo/project_3/image_1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_7.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/photo/project_3/image_8.jpg" class="img-responsive img-centered" alt=""><p>
-
-                            <video class="img-responsive img-centered" controls>
-                              <source src="img/photo/project_3/image_12.mp4" type="video/mp4">
-                              Your browser does not support HTML5 video.
-                            </video>
-
-
-<!--                             <video class="img-responsive img-centered">
-                                <source src="img/photo/project_3/image_12.mp4" type="video/mp4">
-                                Video not supported on your browser
-                            </video> -->
-                            <hr>
-                            <div class="project-desc-credits">
-                                Art Direction and Model: Viviksha Panchal
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Off Road</h2>
-                            <h3>Editorial | Layout Design</h3>
-                            <hr>
-                            <div class="project-desc">
-                                Off road, a magazine redesign for dirt bike riders. Learn the basic mechanics and nature of dirt bikes in every issue with polish.
-                            </div>
-                            <img src="img/gd/project_1/Page1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page7.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page8.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page9.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page10.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page11.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page12.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page13.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page14.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_1/Page15.jpg" class="img-responsive img-centered" alt=""><p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Jackie's Boutique</h2>
-                            <h3>Branding | Trademark Logo</h3>
-                            <hr>
-                            <div class="project-desc">
-
-                            </div>
-                            <img src="img/gd/project_2/jackie_1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_2/jackie_2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_2/jackie_3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_2/jackie_4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_2/jackie_5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_2/jackie_6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Gujarat Gin</h2>
-                            <h3>Packaging | Label Design</h3>
-                            <hr>
-                            <div class="project-desc">
-                                Kacchi embroidery (a unique needlework mixture of mirror, beads and thread) highlight Gujarat’s exclusivity, in the same manner botanicals infused in GIN accentuate its essential spirit. Get close to the “Jewel of India” with Gujarat GIN.
-                            </div>
-                            <img src="img/gd/project_3/gin_1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_3/gin_3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_3/gin_4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>The Night Before</h2> 
-                            <h3>Branding | Packaging | Logo</h3>
-                            <hr>
-                            <div class="project-desc">
-                                It is your special night, make it truly special. Assorted with a unique mix of ingredients, The Night Before champagne is a treat for explorers to experience an enchanting adventure with ultimate sophistication. The design and branding of the beverage highlights its true essence to cherish your night before forever.
-                            </div>
-                            <img src="img/gd/project_4/champagne1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_4/champagne2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_4/champagne3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_4/champagne4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_4/champagne5.gif" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_4/champagne6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>American Pulse Association</h2> 
-                            <h3>Promotional Book</h3>
-                            <hr>
-                            <div class="project-desc">
-                                <h4>CLIENT:</h4> American Pulse Association (Coalition for health/nutrition and production/sustainability of pulses) <br/>
-                                <h4>CONCEPT:</h4> 
-                                Add pulses to your diet to prep for any dreading red carpet social event. Their valuable natural nutritional benefits lead to perfect skin, perfect hair, perfect body, and even a perfect dress. <br/>
-
-                            </div>
-                            <img src="img/gd/project_5/pulses_1.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_2.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_3.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_4.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_5.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_6.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_7.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_8.jpg" class="img-responsive img-centered" alt=""><p>
-                            <img src="img/gd/project_5/pulses_9.jpg" class="img-responsive img-centered" alt=""><p>
-                            <hr>
-                            <div class="project-desc-credits">
-                                To be distributed: Magazine shelves on subway platform, grocery stores and supermarkets.
-                            </div><br />
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Resume</h2>
-                            <hr>
-                            <img src="img/gd/project_6/resume.jpg" class="img-responsive img-centered" alt=""><p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- jQuery -->
@@ -748,6 +110,15 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <!-- Angular -->
+    <script src="vendor/angular-1.2.25/angular.min.js"></script>
+    <script src="vendor/angular-1.2.25/angular-route.js"></script>
+    <script src="vendor/angular-1.2.25/angular-animate.min.js"></script>
+
+    <!-- main script -->
+    <script src="script.js"></script>
+
 
 </body>
 
