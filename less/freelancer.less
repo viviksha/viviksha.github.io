@@ -148,11 +148,8 @@ header {
 	}
 	.navbar-brand {
 		color: white;
-		&:hover,
-		&:focus,
-		&:active,
-		&.active {
-			color: @gray-darker;
+		&:hover {
+			color: @gray-dark;
 		}
 	}
 	.navbar-nav {
@@ -161,21 +158,22 @@ header {
 			a {
 				color: white;
 				&:hover {
-					color: @theme-success;
+					color: @gray-darker;
 					outline: none;
 				}
 				&:focus,
 				&:active {
-					color: @theme-success;
+					color: @gray-darker;
 				}
 			}
-			&.active {
+			&:active {
 				a {
 					background: @theme-success;
 					&:hover,
 					&:focus,
 					&:active {
 						background: @theme-success;
+						color: black;
 					}
 				}
 			}
@@ -188,7 +186,7 @@ header {
 		border-color: white;
 		&:hover,
 		&:focus {
-			background-color: @theme-success;
+			//background-color: @theme-success;
 			color: white;
 			border-color: @theme-success;
 		}
