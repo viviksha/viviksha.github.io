@@ -584,4 +584,8 @@ fieldset[disabled] .btn-success.active {
     padding-left: 0;
     padding-right: 0;
   }
+  #portfolioModal1 .modal-content img.img-responsive.img-centered {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
