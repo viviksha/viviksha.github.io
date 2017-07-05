@@ -146,12 +146,12 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #1b1b1b;
+  color: #222222;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color: #1b1b1b;
+  color: #222222;
 }
 .navbar-custom .navbar-nav li:active a {
   background: #FFFFFF;
@@ -584,5 +584,8 @@ fieldset[disabled] .btn-success.active {
   #portfolioModal1 .modal-content img.img-responsive.img-centered {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .modal-body {
+    padding: 0px;
   }
 }
