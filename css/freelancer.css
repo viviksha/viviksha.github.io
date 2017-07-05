@@ -136,11 +136,8 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand {
   color: white;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: #222222;
+.navbar-custom .navbar-brand:hover {
+  color: #333333;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -149,20 +146,21 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #FFFFFF;
+  color: #1b1b1b;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color: white;
+  color: #1b1b1b;
 }
-.navbar-custom .navbar-nav li.active a {
+.navbar-custom .navbar-nav li:active a {
   background: #FFFFFF;
 }
-.navbar-custom .navbar-nav li.active a:hover,
-.navbar-custom .navbar-nav li.active a:focus,
-.navbar-custom .navbar-nav li.active a:active {
+.navbar-custom .navbar-nav li:active a:hover,
+.navbar-custom .navbar-nav li:active a:focus,
+.navbar-custom .navbar-nav li:active a:active {
   background: #FFFFFF;
+  color: black;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -172,7 +170,6 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #FFFFFF;
   color: white;
   border-color: #FFFFFF;
 }
