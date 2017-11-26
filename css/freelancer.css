@@ -111,6 +111,9 @@ header .intro-text .skills {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+#about-me-photo {
+  width: 340px;
+}
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
